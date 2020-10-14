@@ -17,3 +17,4 @@ if __name__ == "__main__":
         jstr = f.read()
     resp = http_get(url, jstr)
     print resp.content
+    print len(json.loads(resp.content)["flow-node-inventory:flow"])
